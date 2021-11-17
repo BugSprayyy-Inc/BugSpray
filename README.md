@@ -27,19 +27,20 @@ This app will provide solutions to users who may be struggling on how to solve o
 
 **Required Must-have Stories**
 
-* User can log-in/sign-up and stay logged in 
-* User can upload either file or screenshot of what they're working on
-    * User can also input his or her code on a provided section and submit like hackerrank website
-*  User can comment and view comments 
-*  User can navigate through levels and programming languages
-*  User Can Access Settings to Log Off
-
-**Optional Nice-to-have Stories**
-
-* User sees a styled Icon-Logo before getting on App
-* User has a profile picture
-* User can view profiles and view the other user's amount of questions/answers
-
+- [x] * User can log-in/sign-up and stay logged in
+    - [Gif: https://media.giphy.com/media/9kOj6iGDuiycc8B6To/giphy.gif ]  
+- [ ] * User can upload either file or screenshot of what they're working on
+- [ ]     * User can also input his or her code on a provided section and submit like hackerrank website
+- [ ] *  User can comment and view comments 
+- [ ] *  User can navigate through levels and programming languages
+- [ ] *  User Can Access Settings to Log Off
+- [ ] 
+- [ ] **Optional Nice-to-have Stories**
+- [ ] 
+- [ ] * User sees a styled Icon-Logo before getting on App
+- [ ] * User has a profile picture
+- [ ] * User can view profiles and view the other user's amount of questions/answers
+- [ ] 
 ### 2. Screen Archetypes
 
 * Login
@@ -179,3 +180,4 @@ This app will provide solutions to users who may be struggling on how to solve o
 >             }
 >         }
 >     }
+
