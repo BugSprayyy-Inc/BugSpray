@@ -1,4 +1,4 @@
-project '/Users/juangonzalez/Desktop/hereIgoagain/BugSprayyy-1.0/BugSpray/BugSpray.xcodeproj'
+project '/Users/cynthiagonzalez/BugSpray/Bugspray.xcodeproj'
 
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
