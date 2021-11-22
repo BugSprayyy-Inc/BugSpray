@@ -47,6 +47,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                <connections>
+                                    <segue destination="bIu-gJ-mca" kind="presentation" id="wx5-5e-9SD"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't Have an Account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9X0-qR-fXc">
                                 <rect key="frame" x="116" y="612" width="183" height="21"/>
@@ -126,6 +129,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                <connections>
+                                    <segue destination="7qX-qG-Bif" kind="presentation" id="p2b-PF-uBp"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Code Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSs-rm-SFl">
                                 <rect key="frame" x="129" y="532" width="156" height="21"/>
@@ -141,7 +147,6 @@
                     <connections>
                         <outlet property="Password" destination="beJ-Wa-hTr" id="Qdv-Pf-j4T"/>
                         <outlet property="Username" destination="511-nC-f8M" id="aw1-QH-aIn"/>
-                        <segue destination="7qX-qG-Bif" kind="presentation" identifier="loginSegue" id="ca5-Hi-bjO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jyr-Jc-HI9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -151,7 +156,6 @@
         <!--Welcome-->
         <scene sceneID="ka8-hw-sbK">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e4W-As-1YA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController modalPresentationStyle="fullScreen" id="zbu-md-HJa" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="w3V-jm-qJe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -222,6 +226,7 @@
                     <navigationItem key="navigationItem" title="Welcome" id="jzr-c0-V3C"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e4W-As-1YA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="363.768115942029" y="1439.7321428571429"/>
         </scene>
@@ -403,7 +408,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ca5-Hi-bjO"/>
+        <segue reference="p2b-PF-uBp"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
