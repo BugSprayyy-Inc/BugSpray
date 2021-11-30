@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0715B3E72741F50100786CBD /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715B3E62741F50100786CBD /* LogInViewController.swift */; };
+		077D7CD227568B9B00629739 /* CamaraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077D7CD127568B9B00629739 /* CamaraViewController.swift */; };
 		8487925A13E683B4C2AE8DBA /* Pods_BugSpray.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8423164F6168B5BAC10DB813 /* Pods_BugSpray.framework */; };
 		D99A1A2F2741FA4F0033AF39 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A1A2E2741FA4F0033AF39 /* SignUpViewController.swift */; };
 		DED2D0EE2739B49F00179174 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2D0ED2739B49F00179174 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		0715B3E62741F50100786CBD /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		077D7CD127568B9B00629739 /* CamaraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamaraViewController.swift; sourceTree = "<group>"; };
 		8423164F6168B5BAC10DB813 /* Pods_BugSpray.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BugSpray.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DE925500AE5DE6582CA0D4 /* Pods-BugSpray.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BugSpray.release.xcconfig"; path = "Target Support Files/Pods-BugSpray/Pods-BugSpray.release.xcconfig"; sourceTree = "<group>"; };
 		D99A1A2E2741FA4F0033AF39 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				DED2D0FB2739B4A100179174 /* Info.plist */,
 				0715B3E62741F50100786CBD /* LogInViewController.swift */,
 				D99A1A2E2741FA4F0033AF39 /* SignUpViewController.swift */,
+				077D7CD127568B9B00629739 /* CamaraViewController.swift */,
 			);
 			path = BugSpray;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0715B3E72741F50100786CBD /* LogInViewController.swift in Sources */,
+				077D7CD227568B9B00629739 /* CamaraViewController.swift in Sources */,
 				DED2D0F22739B49F00179174 /* ViewController.swift in Sources */,
 				DED2D0EE2739B49F00179174 /* AppDelegate.swift in Sources */,
 				DED2D0F02739B49F00179174 /* SceneDelegate.swift in Sources */,
