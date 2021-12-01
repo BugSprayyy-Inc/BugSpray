@@ -32,7 +32,10 @@ This app will provide solutions to users who may be struggling on how to solve o
 - [ ] * User can upload either file or screenshot of what they're working on
 - [ ]     * User can also input his or her code on a provided section and submit like hackerrank website
 - [ ] *  User can comment and view comments 
-- [ ] *  User can navigate through levels and programming languages
+- [x] *  User can navigate through levels and programming languages
+- [gifforclass2](https://user-images.githubusercontent.com/82347440/144166171-3ef3d639-93fd-457a-b8b1-33ec779c054a.gif)
+
+
 - [ ] *  User Can Access Settings to Log Off
 - [ ] 
 - [ ] **Optional Nice-to-have Stories**
