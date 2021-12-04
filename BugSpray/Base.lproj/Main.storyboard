@@ -221,10 +221,10 @@
             </objects>
             <point key="canvasLocation" x="405.79710144927537" y="742.63392857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Feed View Controller-->
         <scene sceneID="KWk-ff-S3l">
             <objects>
-                <viewController storyboardIdentifier="C++View" modalPresentationStyle="fullScreen" id="iK6-Kh-d7t" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="C++View" modalPresentationStyle="fullScreen" id="iK6-Kh-d7t" customClass="C__FeedViewController" customModule="BugSpray" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4p1-0J-qIV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -334,6 +334,9 @@
                             <constraint firstItem="UVP-HS-4bP" firstAttribute="leading" secondItem="jcT-1d-3tu" secondAttribute="leading" constant="11" id="qcX-md-eWk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="gfO-Uh-u9b" id="a38-Us-Yf4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="elc-4m-Wdi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -940,7 +943,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6yO-Xm-3TK"/>
+        <segue reference="Ch9-n0-QtM"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="plus.rectangle.on.folder" catalog="system" width="128" height="96"/>
