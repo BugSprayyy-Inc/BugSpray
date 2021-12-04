@@ -9,14 +9,67 @@ import UIKit
 import Parse
 import AlamofireImage
 
-class C__FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class C__FeedViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    var posts = [PFObject]()
+    var selectedPost: PFObject!
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        // Do any additional setup after loading the view.
-        
+        let post = posts[section]
+        let comments = (post["comments"] as? [PFObject]) ?? []
+        return comments.count + 2
+    }
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return posts.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let post = posts[indexPath.section]
+        let comments = (post["comments"] as? [PFObject]) ?? []
+
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "C++PostCell") as! C__PostCell
+
+            let user = post["author"] as! PFUser
+            cell.usernameLabel.text = user.username
+            cell.captionLabel.text = (post["caption"] as! String)
+
+            let imageFile = post["image"] as! PFFileObject
+            let urlString = imageFile.url!
+            let url = URL(string: urlString)!
+
+            cell.photoView.af_setImage(withURL: url)
+
+
+            return cell
+        }else if indexPath.row <= comments.count {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "C++CommentCell") as! C__CommentCell
+
+            let comment = comments[indexPath.row - 1]
+            cell.commentLabel.text = comment["text"] as? String
+
+            let user = comment["author"] as! PFUser
+            cell.nameLabel.text = user.username
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "AddCommentCell")!
+            return cell
+        }
+}
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let post = posts[indexPath.section]
+        let comments = (post["comments"] as? [PFObject]) ?? []
+        if indexPath.row == comments.count + 1 {
+            becomeFirstResponder()
+
+        }
+}
     
 
     /*
@@ -29,4 +82,5 @@ class C__FeedViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     */
 
-}
+    }
+

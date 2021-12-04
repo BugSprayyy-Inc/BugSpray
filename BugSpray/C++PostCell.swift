@@ -7,23 +7,25 @@
 
 import UIKit
 
-class C__PostCell: ViewController {
+class C__PostCell: UITableViewCell {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
+    @IBOutlet weak var photoView: UIImageView!
+
+    @IBOutlet weak var usernameLabel: UILabel!
+
+    @IBOutlet weak var captionLabel: UILabel!
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
     }
-    */
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
 
 }
