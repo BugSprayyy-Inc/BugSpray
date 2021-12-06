@@ -29,18 +29,21 @@ This app will provide solutions to users who may be struggling on how to solve o
 
 - [x] * User can log-in/sign-up and stay logged in
     - [Gif: https://media.giphy.com/media/9kOj6iGDuiycc8B6To/giphy.gif ]  
-- [ ] * User can upload either file or screenshot of what they're working on
-- [ ]     * User can also input his or her code on a provided section and submit like hackerrank website
-- [ ] *  User can comment and view comments 
+- [x] * User can upload either file or screenshot of what they're working on
+- [x]     * User can also input his or her code on a provided section and submit like hackerrank website
+- [x] *  User can comment and view comments 
 - [x] *  User can navigate through levels and programming languages
 - [gifforclass2](https://user-images.githubusercontent.com/82347440/144166171-3ef3d639-93fd-457a-b8b1-33ec779c054a.gif)
+- UPDATES:
+![bugspraywork](https://user-images.githubusercontent.com/82347440/144789416-c34bf65f-7dc0-4d10-8164-4133c238ce4a.gif)
 
 
-- [ ] *  User Can Access Settings to Log Off
+
+- [x] *  User Can Access Settings to Log Off
 - [ ] 
 - [ ] **Optional Nice-to-have Stories**
 - [ ] 
-- [ ] * User sees a styled Icon-Logo before getting on App
+- [x] * User sees a styled Icon-Logo before getting on App
 - [ ] * User has a profile picture
 - [ ] * User can view profiles and view the other user's amount of questions/answers
 - [ ] 
