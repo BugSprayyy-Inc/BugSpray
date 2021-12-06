@@ -34,6 +34,9 @@ This app will provide solutions to users who may be struggling on how to solve o
 - [x] *  User can comment and view comments 
 - [x] *  User can navigate through levels and programming languages
 - [gifforclass2](https://user-images.githubusercontent.com/82347440/144166171-3ef3d639-93fd-457a-b8b1-33ec779c054a.gif)
+- UPDATES:
+![bugspraywork](https://user-images.githubusercontent.com/82347440/144789416-c34bf65f-7dc0-4d10-8164-4133c238ce4a.gif)
+
 
 
 - [x] *  User Can Access Settings to Log Off
