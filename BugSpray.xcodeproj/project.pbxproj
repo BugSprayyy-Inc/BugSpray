@@ -11,14 +11,12 @@
 		8487925A13E683B4C2AE8DBA /* Pods_BugSpray.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8423164F6168B5BAC10DB813 /* Pods_BugSpray.framework */; };
 		D99A1A2F2741FA4F0033AF39 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A1A2E2741FA4F0033AF39 /* SignUpViewController.swift */; };
 		D99B227F275DB84600E05C49 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B227E275DB84600E05C49 /* OptionsViewController.swift */; };
-		D99B2281275DC49E00E05C49 /* C++AddCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99B2280275DC49E00E05C49 /* C++AddCommentCell.swift */; };
 		D9B99653275BDE6E00018FEF /* C++CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B99652275BDE6E00018FEF /* C++CameraViewController.swift */; };
 		D9B99655275C0B1600018FEF /* C++FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B99654275C0B1600018FEF /* C++FeedViewController.swift */; };
 		D9B9965B275C31AF00018FEF /* C++CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B9965A275C31AF00018FEF /* C++CommentCell.swift */; };
 		D9B9965D275C329A00018FEF /* C++PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B9965C275C329A00018FEF /* C++PostCell.swift */; };
 		DED2D0EE2739B49F00179174 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2D0ED2739B49F00179174 /* AppDelegate.swift */; };
 		DED2D0F02739B49F00179174 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2D0EF2739B49F00179174 /* SceneDelegate.swift */; };
-		DED2D0F22739B49F00179174 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2D0F12739B49F00179174 /* ViewController.swift */; };
 		DED2D0F52739B49F00179174 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED2D0F32739B49F00179174 /* Main.storyboard */; };
 		DED2D0F72739B4A100179174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED2D0F62739B4A100179174 /* Assets.xcassets */; };
 		DED2D0FA2739B4A100179174 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED2D0F82739B4A100179174 /* LaunchScreen.storyboard */; };
@@ -30,7 +28,6 @@
 		88DE925500AE5DE6582CA0D4 /* Pods-BugSpray.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BugSpray.release.xcconfig"; path = "Target Support Files/Pods-BugSpray/Pods-BugSpray.release.xcconfig"; sourceTree = "<group>"; };
 		D99A1A2E2741FA4F0033AF39 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D99B227E275DB84600E05C49 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
-		D99B2280275DC49E00E05C49 /* C++AddCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "C++AddCommentCell.swift"; sourceTree = "<group>"; };
 		D9B99652275BDE6E00018FEF /* C++CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "C++CameraViewController.swift"; sourceTree = "<group>"; };
 		D9B99654275C0B1600018FEF /* C++FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "C++FeedViewController.swift"; sourceTree = "<group>"; };
 		D9B9965A275C31AF00018FEF /* C++CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "C++CommentCell.swift"; sourceTree = "<group>"; };
@@ -38,7 +35,6 @@
 		DED2D0EA2739B49F00179174 /* BugSpray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BugSpray.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED2D0ED2739B49F00179174 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DED2D0EF2739B49F00179174 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DED2D0F12739B49F00179174 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DED2D0F42739B49F00179174 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DED2D0F62739B4A100179174 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DED2D0F92739B4A100179174 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,7 +94,6 @@
 			children = (
 				DED2D0ED2739B49F00179174 /* AppDelegate.swift */,
 				DED2D0EF2739B49F00179174 /* SceneDelegate.swift */,
-				DED2D0F12739B49F00179174 /* ViewController.swift */,
 				DED2D0F32739B49F00179174 /* Main.storyboard */,
 				DED2D0F62739B4A100179174 /* Assets.xcassets */,
 				DED2D0F82739B4A100179174 /* LaunchScreen.storyboard */,
@@ -110,7 +105,6 @@
 				D9B9965A275C31AF00018FEF /* C++CommentCell.swift */,
 				D9B9965C275C329A00018FEF /* C++PostCell.swift */,
 				D99B227E275DB84600E05C49 /* OptionsViewController.swift */,
-				D99B2280275DC49E00E05C49 /* C++AddCommentCell.swift */,
 			);
 			path = BugSpray;
 			sourceTree = "<group>";
@@ -152,7 +146,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DED2D0E52739B49F00179174 /* Build configuration list for PBXProject "Bugspray" */;
+			buildConfigurationList = DED2D0E52739B49F00179174 /* Build configuration list for PBXProject "BugSpray" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -231,7 +225,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0715B3E72741F50100786CBD /* LogInViewController.swift in Sources */,
-				DED2D0F22739B49F00179174 /* ViewController.swift in Sources */,
 				DED2D0EE2739B49F00179174 /* AppDelegate.swift in Sources */,
 				D9B9965B275C31AF00018FEF /* C++CommentCell.swift in Sources */,
 				D9B99655275C0B1600018FEF /* C++FeedViewController.swift in Sources */,
@@ -240,7 +233,6 @@
 				D99A1A2F2741FA4F0033AF39 /* SignUpViewController.swift in Sources */,
 				D9B99653275BDE6E00018FEF /* C++CameraViewController.swift in Sources */,
 				D99B227F275DB84600E05C49 /* OptionsViewController.swift in Sources */,
-				D99B2281275DC49E00E05C49 /* C++AddCommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +433,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DED2D0E52739B49F00179174 /* Build configuration list for PBXProject "Bugspray" */ = {
+		DED2D0E52739B49F00179174 /* Build configuration list for PBXProject "BugSpray" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DED2D0FC2739B4A100179174 /* Debug */,

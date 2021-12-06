@@ -8,7 +8,7 @@
 import UIKit
 import Parse
 
-class SignUpViewController: ViewController {
+class SignUpViewController: UIViewController {
     @IBOutlet weak var Username: UITextField!
 
     @IBOutlet weak var Password: UITextField!
@@ -21,8 +21,8 @@ class SignUpViewController: ViewController {
     
     @IBAction func OnSignUp(_ sender: Any) {
         let user = PFUser()
-        user.username = Username.text!
-        user.password = Password.text!
+        user.username = Username.text
+        user.password = Password.text
 
         user.signUpInBackground { (success, error) in
             if success {

@@ -21,8 +21,6 @@ class C__FeedViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("view is loaded")
-
         commentBar.inputTextView.placeholder = "Add a comment..."
         commentBar.sendButton.title = "Post"
         commentBar.delegate = self
@@ -34,22 +32,6 @@ class C__FeedViewController: UIViewController, UITableViewDelegate, UITableViewD
         let center = NotificationCenter.default
         center.addObserver(self, selector: #selector(keyboardWillBeHidden(note:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-
-        tableView.separatorColor = UIColor.red
-
-        let query = PFQuery(className: "Posts")
-        query.includeKeys(["author", "caption", "image"])
-        query.limit = 20
-
-        query.findObjectsInBackground { (posts, error) in
-          if posts != nil {
-            self.posts = posts!
-            self.tableView.reloadData()
-          }
-        }
-      }
     @objc func keyboardWillBeHidden(note: Notification){
         commentBar.inputTextView.text = nil
         showsCommentBar = false
@@ -64,8 +46,20 @@ class C__FeedViewController: UIViewController, UITableViewDelegate, UITableViewD
         return showsCommentBar
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
 
+        let query = PFQuery(className: "Posts")
+        query.includeKeys(["author", "comments", "comments.author"])
+        query.limit = 30
 
+        query.findObjectsInBackground{ (posts,error) in
+            if posts != nil {
+                self.posts = posts!
+                self.tableView.reloadData()
+            }
+        }
+    }
 
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
         //Create Comment
@@ -90,46 +84,36 @@ class C__FeedViewController: UIViewController, UITableViewDelegate, UITableViewD
         commentBar.inputTextView.resignFirstResponder()
     }
 
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-//        let post = posts[section]
-//        let comments = (post["comments"] as? [PFObject]) ?? []
-//        return comments.count + 2
+
+        let post = posts[section]
+        let comments = (post["comments"] as? [PFObject]) ?? []
+        return comments.count + 2
     }
 
-
     func numberOfSections(in tableView: UITableView) -> Int {
-        // posts is empty, so we are not getting any sections
-        print("num of sections is called", posts.count)
         return posts.count
     }
 
-
-
-//    @objc(tableView:cellForRowAtIndexPath:)
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("cellforrowat is called")
         let post = posts[indexPath.section]
         let comments = (post["comments"] as? [PFObject]) ?? []
 
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "C++PostCell") as! C__PostCell
 
-            if post["author"] != nil {
-                let user = post["author"] as! PFUser
-                cell.usernameLabel.text = user.username
-                cell.captionLabel.text = (post["caption"] as! String)
+            let user = post["author"] as! PFUser
+            cell.usernameLabel.text = user.username
+            cell.captionLabel.text = (post["caption"] as! String)
 
-                let imageFile = post["image"] as! PFFileObject
-                let urlString = imageFile.url!
-                let url = URL(string: urlString)!
+            let imageFile = post["image"] as! PFFileObject
+            let urlString = imageFile.url!
+            let url = URL(string: urlString)!
 
-                cell.photoView.af_setImage(withURL: url)
+            cell.photoView.af_setImage(withURL: url)
 
 
-                }
-            return cell 
+            return cell
         }else if indexPath.row <= comments.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: "C++CommentCell") as! C__CommentCell
 
@@ -140,7 +124,7 @@ class C__FeedViewController: UIViewController, UITableViewDelegate, UITableViewD
             cell.nameLabel.text = user.username
             return cell
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "C++AddCommentCell") as! C__AddCommentCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "C++AddCommentCell")!
             return cell
         }
 }
@@ -167,5 +151,13 @@ class C__FeedViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     */
 
+    @IBAction func onLogoutButton(_ sender: Any) {
+        PFUser.logOut()
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let delegate = windowScene.delegate as? SceneDelegate else {return}
+
+        delegate.window?.rootViewController = loginViewController
+    }
 
 }
