@@ -67,9 +67,13 @@
                                     <action selector="LogIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vWF-hG-0GE"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled_Artwork 3-1" translatesAutoresizingMaskIntoConstraints="NO" id="jON-4o-nWY">
+                                <rect key="frame" x="-53" y="112" width="467" height="231"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                     </view>
                     <connections>
                         <outlet property="Password" destination="dIY-Ci-wbi" id="lQ4-6d-wEj"/>
@@ -143,7 +147,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ht9-oZ-1kF"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                     </view>
                     <connections>
                         <outlet property="Password" destination="beJ-Wa-hTr" id="Qdv-Pf-j4T"/>
@@ -152,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jyr-Jc-HI9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="641" y="-117"/>
+            <point key="canvasLocation" x="640.57971014492762" y="-117.1875"/>
         </scene>
         <!--Options View Controller-->
         <scene sceneID="xD0-6c-Jm1">
@@ -305,9 +309,9 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMy-GO-myh">
-                                                    <rect key="frame" x="20" y="26" width="379" height="47"/>
+                                                    <rect key="frame" x="118" y="-2" width="276" height="47"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="379" id="j7a-Et-EyP"/>
+                                                        <constraint firstAttribute="width" constant="276" id="j7a-Et-EyP"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -315,10 +319,10 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="9fF-BX-1sA" firstAttribute="leading" secondItem="hMy-GO-myh" secondAttribute="leading" id="BOm-WX-noh"/>
+                                                <constraint firstItem="9fF-BX-1sA" firstAttribute="leading" secondItem="hMy-GO-myh" secondAttribute="leading" constant="-98" id="BOm-WX-noh"/>
                                                 <constraint firstItem="9fF-BX-1sA" firstAttribute="leading" secondItem="H7j-vJ-Srj" secondAttribute="leadingMargin" id="QYe-DZ-bK9"/>
-                                                <constraint firstItem="hMy-GO-myh" firstAttribute="top" secondItem="H7j-vJ-Srj" secondAttribute="topMargin" constant="15" id="iyI-kB-Hmd"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="hMy-GO-myh" secondAttribute="bottom" constant="-11" id="xT2-Pi-X4c"/>
+                                                <constraint firstItem="hMy-GO-myh" firstAttribute="top" secondItem="H7j-vJ-Srj" secondAttribute="topMargin" constant="-13" id="iyI-kB-Hmd"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hMy-GO-myh" secondAttribute="bottom" constant="17" id="xT2-Pi-X4c"/>
                                                 <constraint firstItem="9fF-BX-1sA" firstAttribute="top" secondItem="H7j-vJ-Srj" secondAttribute="topMargin" id="xf3-9p-2rl"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -432,10 +436,10 @@
             </objects>
             <point key="canvasLocation" x="-1242.0289855072465" y="2205.1339285714284"/>
         </scene>
-        <!--View Controller-->
+        <!--Python Camera View Controller-->
         <scene sceneID="mV9-5j-9tD">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="QTX-WO-37g" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="QTX-WO-37g" customClass="PythonCameraViewController" customModule="BugSpray" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="edx-7K-FhD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -443,6 +447,10 @@
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MmL-yN-u5R">
                                 <rect key="frame" x="20" y="44" width="374" height="374"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="yF2-AK-1BP" appends="YES" id="ftk-UA-Fe2"/>
+                                </connections>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Whd-hu-BNi">
                                 <rect key="frame" x="20" y="426" width="374" height="34"/>
@@ -455,13 +463,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmitButton:" destination="QTX-WO-37g" eventType="touchUpInside" id="cw2-MY-Pgt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="l0o-Oj-X0V"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="commentField" destination="Whd-hu-BNi" id="A8H-j9-czJ"/>
+                        <outlet property="imageView" destination="MmL-yN-u5R" id="JF6-CR-q0D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TQe-NQ-bz3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="yF2-AK-1BP">
+                    <connections>
+                        <action selector="onCameraButton:" destination="QTX-WO-37g" id="S2O-4C-YIo"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-433.33333333333337" y="2205.1339285714284"/>
         </scene>
@@ -564,10 +584,10 @@
             </objects>
             <point key="canvasLocation" x="1966.6666666666667" y="2209.8214285714284"/>
         </scene>
-        <!--View Controller-->
+        <!--Python Feed View Controller-->
         <scene sceneID="dbK-Y5-8cV">
             <objects>
-                <viewController storyboardIdentifier="PythonView" modalPresentationStyle="fullScreen" id="vmK-7h-kXv" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PythonView" modalPresentationStyle="fullScreen" id="vmK-7h-kXv" customClass="PythonFeedViewController" customModule="BugSpray" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G9i-ic-XIO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -577,7 +597,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="325" id="avD-jP-ZUs">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="325" id="avD-jP-ZUs" customClass="PythonPostCell" customModule="BugSpray" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="325"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="avD-jP-ZUs" id="nhO-jQ-CIb">
@@ -604,8 +624,13 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="captionLabel" destination="kaf-eq-pxp" id="4hK-Cm-MKP"/>
+                                            <outlet property="photoView" destination="8wp-ic-3Px" id="Czn-0P-rLQ"/>
+                                            <outlet property="usernameLabel" destination="nhc-1I-epU" id="A3c-gI-Oep"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gH2-3t-Sj7">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gH2-3t-Sj7" customClass="PythonCommentCell" customModule="BugSpray" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="369.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gH2-3t-Sj7" id="KG0-pw-ps4">
@@ -628,6 +653,10 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentLabel" destination="fHa-il-5JB" id="oCi-Js-SWC"/>
+                                            <outlet property="nameLabel" destination="KpG-OP-21E" id="iAr-GH-kfq"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="36b-Lv-yss">
                                         <rect key="frame" x="0.0" y="413" width="414" height="43.5"/>
@@ -683,10 +712,13 @@
                             <constraint firstItem="jby-du-oJp" firstAttribute="leading" secondItem="1eg-nw-8A2" secondAttribute="leading" constant="11" id="mJa-0a-huT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="G9i-ic-XIO" id="S7n-9a-NwX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fyi-Uc-Y84" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-433.33333333333337" y="1468.5267857142856"/>
+            <point key="canvasLocation" x="-333" y="1469"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8gc-Ox-Hgy">
@@ -984,12 +1016,19 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ch9-n0-QtM"/>
+        <segue reference="CO0-64-23s"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Untitled_Artwork 3-1" width="1244" height="821"/>
         <image name="plus.rectangle.on.folder" catalog="system" width="128" height="96"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
