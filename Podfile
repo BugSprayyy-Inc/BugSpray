@@ -8,9 +8,9 @@ target 'BugSpray' do
 
   # Pods for BugSpray
   # Add Parse pods and install
-    pod 'Parse'
-    pod 'AlamofireImage'
-
+pod 'Parse'
+pod 'AlamofireImage'
+pod 'MessageInputBar'
 
 
 end

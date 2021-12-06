@@ -124,15 +124,6 @@
                                     <segment title="Advanced"/>
                                 </segments>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTF-YC-wrr">
-                                <rect key="frame" x="170" y="645" width="75" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
-                                <connections>
-                                    <segue destination="Avx-2l-ZVp" kind="presentation" identifier="loginSegue" id="ySV-QK-lin"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Code Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSs-rm-SFl">
                                 <rect key="frame" x="129" y="532" width="156" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -140,6 +131,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTF-YC-wrr">
+                                <rect key="frame" x="170" y="656" width="75" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                <connections>
+                                    <action selector="OnSignUp:" destination="bIu-gJ-mca" eventType="touchUpInside" id="ivG-Al-wZT"/>
+                                    <segue destination="Avx-2l-ZVp" kind="presentation" identifier="loginSegue" id="ySV-QK-lin"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ht9-oZ-1kF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -952,7 +953,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ch9-n0-QtM"/>
+        <segue reference="GxK-3L-mw4"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="plus.rectangle.on.folder" catalog="system" width="128" height="96"/>
