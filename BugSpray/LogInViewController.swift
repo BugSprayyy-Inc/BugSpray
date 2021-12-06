@@ -32,15 +32,14 @@ class LogInViewController: UIViewController {
         let password = Password.text!
 
         PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
-                    if (user != nil){
-                        self.performSegue(withIdentifier: "loginSegue", sender: nil)
-                    } else{
-                        print("Error:  (error?.localizedDescription)")
-                    
-
-                }
-
+            if (user != nil){
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else{
+                print("Error onSignup \(String(describing: error?.localizedDescription))")
             }
+
+        }
+
     }
     
 
