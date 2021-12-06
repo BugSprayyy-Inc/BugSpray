@@ -48,7 +48,7 @@ class PythonFeedViewController:  UIViewController, UITableViewDelegate, UITableV
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
 
-        let query = PFQuery(className: "Posts")
+        let query = PFQuery(className: "PythonPosts")
         query.includeKeys(["author", "comments", "comments.author"])
         query.limit = 30
 
